@@ -34,6 +34,7 @@ Throughout the paper, residues are numbered based on full-toxin numbering. Resid
 ### Analysis scripts
 Scripts related to the analysis of MD data and figure generation. 
 
+```md
 AllosteryCPD/
 - README.md
 - AlphaFold/
@@ -57,12 +58,14 @@ AllosteryCPD/
 - BasicMD.py
 - VectorCoordCombo.py
 - ... (other basic analysis scripts)
+```
 
 ### Unbiased simulations
 Key files for reproduction of simulation data are within the reproduce/ directory. 
 These include the core unbiased simulations (apo/holo + lowered/raised), unbiased mutants (K600G, E743G, K600G-E743G) and unbiased TcdA/ (apo/holo + lowered/raised)
 In general, this looks like:
 
+```md
 AllosteryCPD/
 - reproduce/
     - example-system/
@@ -88,11 +91,13 @@ AllosteryCPD/
         - NPT2.mdp (pressure equilibration, restraining only ligand)
         - Production (md run)
     - ... (various systems, force fields)
+```
 
 ### Biased simulations
 Key files for reproduction of biased sampling data using umbrella sampling are within the reproduce/ directory. 
 In general, this looks like:
 
+```md
 AllosteryCPD/
 - reproduce/
     - umbrella-apo/
@@ -133,3 +138,4 @@ AllosteryCPD/
         - us_array.sh (set up structure, equilibrate, simulate)
         - post_process.sh 
         - restraint_pts.csv (table of 2D umbrella positions)
+```
