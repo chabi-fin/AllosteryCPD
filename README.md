@@ -1,13 +1,11 @@
-\usepackage{amsmath}
-\usepackage{dirtytalk}
 # *Clostridioides difficile* Toxins Unhinged: Allosterically Switchable Network Orients $\beta$-flap
 
 ## Description
 Allosteric proteins exhibit a functional response upon ligand binding far from the active site. 
-*Clostridioides difficile* toxins use allosteric binding by an endogenous co-factor toorchestrate self-cleavage from within the target cell. This binding event induces a conformational shift, primarily effecting a lever-like \say{$\beta$-flap} region, with two known orientations. 
+*Clostridioides difficile* toxins use allosteric binding by an endogenous co-factor toorchestrate self-cleavage from within the target cell. This binding event induces a conformational shift, primarily effecting a lever-like "$`\beta`$-flap" region, with two known orientations. 
 We uncovered a mechanism for this allosteric transition using extensive atomistic MD simulations and computational and experimental mutagenesis.
 The mechanism relies on a switchable interaction network. 
-The most prominent interaction pair is  K600–E743, with K600 interactions explaining $\sim$70 \% of the allosteric effect.
+The most prominent interaction pair is  K600–E743, with K600 interactions explaining $`\sim`$70 \% of the allosteric effect.
 Rather than gradually morphing between two end states, the interaction network adopts two mutually exclusive configurations in the active and inactive state.
 Similar switchable networks may explain allostery more broadly.
 This mechanism in particular could aid in drug development targeting the *Clostridioides difficile* toxins autoproteolysis.
