@@ -1,21 +1,18 @@
-# *Clostridioides difficile* Toxins Unhinged: Allosterically Switchable Network Orients Beta-flap
+# *Clostridioides difficile* Toxins Unhinged: Allosterically Switchable Network Orients $\beta$-flap
 
 ## Description
-Allosteric proteins regulate function by substrate binding far from the active site. 
-*Clostridioides difficile* toxins use allosteric binding by an endogenous co-factor to orchestrate self-cleavage from within the target cell. 
-This binding event induces a conformational shift, primarily effecting a lever-like "beta-flap" region, with two known orientations. 
+Allosteric proteins exhibit a functional response upon ligand binding far from the active site. 
+*Clostridioides difficile* toxins use allosteric binding by an endogenous co-factor toorchestrate self-cleavage from within the target cell. This binding event induces a conformational shift, primarily effecting a lever-like \say{$\beta$-flap} region, with two known orientations. 
 We uncovered a mechanism for this allosteric transition using extensive atomistic MD simulations and computational and experimental mutagenesis.
 The mechanism relies on a switchable interaction network. 
-The most prominent interaction is K600–E743, with K600 interactions explaining ~70 % of the allosteric effect.
+The most prominent interaction pair is  K600–E743, with K600 interactions explaining $\sim$70 \% of the allosteric effect.
 Rather than gradually morphing between two end states, the interaction network adopts two mutually exclusive configurations in the active and inactive state.
 Similar switchable networks may explain allostery more broadly.
 This mechanism in particular could aid in drug development targeting the *Clostridioides difficile* toxins autoproteolysis.
 
 ### Conformation naming
 The names given to conformations changed during the development 
-of this project. The conformation named "closed" corresponds to the
-lowered conformation, while the name "open" corresponds to the 
-"raised" conformation.
+of this project. Within the scripts, the conformation named "closed" corresponds to the lowered conformation, while the name "open" corresponds to the "raised" conformation.
 
 ### Residue numbering
 Throughout the paper, residues are numbered based on full-toxin numbering. Residue numbering in the scripts is indexed from the first modelled residue. To convert to full-toxin numbering, add 543 for TcdB and add 541 for TcdA. In particular, K57 -> K600 and E200 -> E743.
@@ -23,13 +20,13 @@ Throughout the paper, residues are numbered based on full-toxin numbering. Resid
 ## File tree
 
 ### Paths to notable files
-- Project configuration: config/settings.py
-- Alignment structure: ref-structures/ref_all_atoms.pdb
-- Alignment residues: ref-structures/core_res.npy
 - Reference TcdB CPD conformations: 
     - reproduce/ref-structures/lowered_ref_state.pdb
     - reproduce/ref-structures/raised_ref_state.pdb
+- Alignment structure: ref-structures/ref_all_atoms.pdb
+- Alignment residues: ref-structures/core_res.npy
 - Modified Amber14sb force field: reproduce/amber14sb_ip6.ff
+- Project configuration: config/settings.py
 
 ### Analysis scripts
 Scripts related to the analysis of MD data and figure generation. 
@@ -57,7 +54,7 @@ AllosteryCPD/
     - utils.py
 - BasicMD.py
 - VectorCoordCombo.py
-- ... (other basic analysis scripts)
+- ... (other basic simulation analysis scripts)
 ```
 
 ### Unbiased simulations
@@ -110,14 +107,7 @@ AllosteryCPD/
         - post_process.sh 
         - restraint_pts.csv (table of 2D umbrella positions)
     - umbrella-holo/
-        - window1/
-            - initial_conform.pdb
-            - plumed_1.dat
-        - ... (window2/, ..., window170/)
-        - ref2.pdb (used for alignment)
-        - us_array.sh (set up structure, equilibrate, simulate)
-        - post_process.sh 
-        - restraint_pts.csv (table of 2D umbrella positions)
+        - ...
     - umbrella-apo-K600G/
         - window1/
             - initial_conform.pdb
@@ -129,13 +119,5 @@ AllosteryCPD/
         - post_process.sh 
         - restraint_pts.csv (table of 2D umbrella positions)
     - umbrella-holo-K600G/
-        - window1/
-            - initial_conform.pdb
-            - mutated.pdb
-            - plumed_1.dat
-        - ... (window2/, ..., window120/)
-        - ref.pdb (used for alignment)
-        - us_array.sh (set up structure, equilibrate, simulate)
-        - post_process.sh 
-        - restraint_pts.csv (table of 2D umbrella positions)
+        - ...
 ```
