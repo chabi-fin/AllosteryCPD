@@ -1,3 +1,5 @@
+# This script was downloaded from https://github.com/plumed/masterclass-21-3.git
+
 import numpy as np
 
 def wham(bias,
