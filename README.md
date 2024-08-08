@@ -1,3 +1,5 @@
+\usepackage{amsmath}
+\usepackage{dirtytalk}
 # *Clostridioides difficile* Toxins Unhinged: Allosterically Switchable Network Orients $\beta$-flap
 
 ## Description
@@ -21,12 +23,12 @@ Throughout the paper, residues are numbered based on full-toxin numbering. Resid
 
 ### Paths to notable files
 - Reference TcdB CPD conformations: 
-    - reproduce/ref-structures/lowered_ref_state.pdb
-    - reproduce/ref-structures/raised_ref_state.pdb
-- Alignment structure: ref-structures/ref_all_atoms.pdb
-- Alignment residues: ref-structures/core_res.npy
-- Modified Amber14sb force field: reproduce/amber14sb_ip6.ff
-- Project configuration: config/settings.py
+    - `reproduce/ref-structures/lowered_ref_state.pdb`
+    - `reproduce/ref-structures/raised_ref_state.pdb`
+- Alignment structure: `ref-structures/ref_all_atoms.pdb`
+- Alignment residues: `ref-structures/core_res.npy`
+- Modified Amber14sb force field: `reproduce/amber14sb_ip6.ff`
+- Project configuration: `config/settings.py`
 
 ### Analysis scripts
 Scripts related to the analysis of MD data and figure generation. 
